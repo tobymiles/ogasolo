@@ -1,237 +1,602 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-        	<!--begin::Fonts-->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
-		<!--end::Fonts-->
-		<!--begin::Page Custom Styles(used by this page)-->
-		<link href="assets/css/pages/login/classic/login-1.css" rel="stylesheet" type="text/css" />
-		<!--end::Page Custom Styles-->
-		<!--begin::Global Theme Styles(used by all pages)-->
-		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/overview.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/overviewUI.css" rel="stylesheet" type="text/css" />
-		<!--end::Global Theme Styles-->
+    <!--begin::Fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+    />
+    <!--end::Fonts-->
+    <!--begin::Page Custom Styles(used by this page)-->
+    <link
+      href="assets/css/pages/login/classic/login-1.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--end::Page Custom Styles-->
+    <!--begin::Global Theme Styles(used by all pages)-->
+    <link
+      href="assets/plugins/global/plugins.bundle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/plugins/custom/prismjs/prismjs.bundle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <!--end::Global Theme Styles-->
 
- <!--begin::Layout Themes(used by all pages)-->
- <link href="assets/css/themes/layout/header/base/light.css" rel="stylesheet" type="text/css" />
- <link href="assets/css/themes/layout/header/menu/light.css" rel="stylesheet" type="text/css" />
- <link href="assets/css/themes/layout/brand/dark.css" rel="stylesheet" type="text/css" />
- <link href="assets/css/themes/layout/aside/dark.css" rel="stylesheet" type="text/css" />
- <!--end::Layout Themes-->
- <link rel="shortcut icon" href="assets/media/logos/favicon-icon.ico.png" />
-</head>
-<body>
-    
+    <!--begin::Layout Themes(used by all pages)-->
+    <link
+      href="assets/css/themes/layout/header/base/light.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/themes/layout/header/menu/light.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/themes/layout/brand/dark.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/themes/layout/aside/dark.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/overview.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/overviewUI.css" rel="stylesheet" type="text/css" />
+    <!--end::Layout Themes-->
+    <link rel="shortcut icon" href="assets/media/logos/favicon-icon.ico.png" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="./assets/media/logos/ogasolo-logo.png"
+          alt="ogasolo logo"
+          class="logo"
+        />
 
-	
-	<div class="container">
+        <nav>
+          <a href="#" class="hide-desktop">
+            <img
+              src="./assets/media/svg/ham.svg"
+              alt="toggle menu"
+              class="menu"
+              id="menu"
+            />
+          </a>
 
-						<header>
-							<img src="./assets/media/logos/ogasolo-logo.png"  alt="ogasolo logo" class="logo">
-						
-							<nav>
-								<a href="#" class="hide-desktop">
-									<img src="./assets/media/svg/ham.svg" alt="toggle menu" class="menu" id="menu">
-								</a>
-						
-								<ul class="show-desktop hide-mobile" id="nav">
-									<li id="exit" class="exit-btn hide-desktop">
-										<img src="./assets/media/svg/exit.svg" alt="exit menu">
-									</li>
-									<li><a href="#">Edit Profile</a></li>
-									<li><a href="subscription.html">Subscription</a></li>
-									<li><a href="#">Inventory Alert</a></li>
-									<li><a href="#">Log Out</a></li>
-								</ul>
-							</nav>
-						</header>
-	</div>
+          <ul class="show-desktop hide-mobile" id="nav">
+            <li id="exit" class="exit-btn hide-desktop">
+              <img src="./assets/media/svg/exit.svg" alt="exit menu" />
+            </li>
+            <li><a href="#">Edit Profile</a></li>
+            <li><a href="subscription.html">Subscription</a></li>
+            <li><a href="#">Inventory Alert</a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
-    
-
-
-						<!--end::Subheader-->
-						<!--begin::Entry-->
-						<div class="d-flex flex-column">
-							<!--begin::Container-->
-							<div class="container">
-								<!--begin::Dashboard-->
-								<!--begin::Row-->
-								<div class="row">
-									<div class="col-lg-12 col-xxl-4">
-										<!--begin::Mixed Widget 1-->
-										<div class="card card-custom bg-gray-100 card-stretch gutter-b" style="height: 600px">
-											<!--begin::Header-->
-											<div class="card-header border-0 bg-dark py-5 text-center">
-												<h3 class="card-title font-weight-bolder text-white ">Dashboard Overview</h3>
-												<!-- <div class="card-toolbar">
+    <!--end::Subheader-->
+    <!--begin::Entry-->
+    <div class="d-flex flex-column">
+      <!--begin::Container-->
+      <div class="container">
+        <!--begin::Dashboard-->
+        <!--begin::Row-->
+        <div class="row">
+          <div class="col-12">
+            <!--begin::Mixed Widget 1-->
+            <div class="card card-custom bg-gray-100 card-stretch gutter-b">
+              <!--begin::Header-->
+              <div class="card-header border-0 bg-dark py-5 text-center">
+                <h3 class="card-title font-weight-bolder text-white">
+                  Dashboard Overview
+                </h3>
+                <!-- <div class="card-toolbar">
 													<div class="dropdown dropdown-inline">
 														<div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
 								
 														</div>
 													</div>
 												</div> -->
-											</div>
+              </div>
 
+              <!--end::Header-->
+              <!--begin::Body-->
+              <div class="card-body p-0 position-relative overflow-hidden">
+                <!--begin::Chart-->
+                <div
+                  id="kt_mixed_widget_1_chart"
+                  class="card-rounded-bottom bg-dark"
+                  style="height: 100px"
+                ></div>
+                <!--end::Chart-->
+                <!--begin::Stats-->
+                <div class="col-12 card-spacer mt-n25">
+                  <!--begin::Row-->
+                  <div class="row m-0">
+                    <div
+                      class="
+                        col-md-4
+                        custom-box-1
+                        total-purchase-box
+                        px-6
+                        py-8
+                        rounded-xl
+                        mr-7
+                        mb-7
+                      "
+                    >
+                      <span
+                        class="svg-icon svg-icon-3x svg-icon-light d-block my-2"
+                      >
+                        <!--begin::Svg Icon | path:assets/media/svg/icons/Media/Equalizer.svg-->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <rect x="0" y="0" width="24" height="24" />
+                            <rect
+                              fill="#000000"
+                              opacity="0.3"
+                              x="13"
+                              y="4"
+                              width="3"
+                              height="16"
+                              rx="1.5"
+                            />
+                            <rect
+                              fill="#000000"
+                              x="8"
+                              y="9"
+                              width="3"
+                              height="11"
+                              rx="1.5"
+                            />
+                            <rect
+                              fill="#000000"
+                              x="18"
+                              y="11"
+                              width="3"
+                              height="9"
+                              rx="1.5"
+                            />
+                            <rect
+                              fill="#000000"
+                              x="3"
+                              y="13"
+                              width="3"
+                              height="7"
+                              rx="1.5"
+                            />
+                          </g>
+                        </svg>
+                        <!--end::Svg Icon-->
+                      </span>
+                      <a
+                        href="#"
+                        class="text-white font-weight-bold font-size-h6"
+                        >Total Purchase</a
+                      >
+                      <h3 class="text-white display-4 b-2">
+                        <span>&#8358;</span>300,700,000
+                      </h3>
+                    </div>
 
-                                            	<!--end::Header-->
-											<!--begin::Body-->
-											<div class="card-body p-0 position-relative overflow-hidden">
-												<!--begin::Chart-->
-												<div id="kt_mixed_widget_1_chart" class="card-rounded-bottom bg-dark" style="height: 100px"></div>
-												<!--end::Chart-->
-												<!--begin::Stats-->
-												<div class="card-spacer mt-n25">
-													<!--begin::Row-->
-													<div class="row m-0">
-														<div class="col custom-box-1 total-purchase-box  px-6 py-8 rounded-xl mr-7 mb-7">
-															<span class="svg-icon svg-icon-3x svg-icon-light  d-block my-2">
-																<!--begin::Svg Icon | path:assets/media/svg/icons/Media/Equalizer.svg-->
-																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																		<rect x="0" y="0" width="24" height="24" />
-																		<rect fill="#000000" opacity="0.3" x="13" y="4" width="3" height="16" rx="1.5" />
-																		<rect fill="#000000" x="8" y="9" width="3" height="11" rx="1.5" />
-																		<rect fill="#000000" x="18" y="11" width="3" height="9" rx="1.5" />
-																		<rect fill="#000000" x="3" y="13" width="3" height="7" rx="1.5" />
-																	</g>
-																</svg>
-																<!--end::Svg Icon-->
-															</span>
-															<a href="#" class="text-white font-weight-bold font-size-h6">Total Purchase</a>
-															<h3 class="text-white display-4 b-2"><span>&#8358;</span>300,700,000</h3>
-														</div>
+                    <div
+                      class="
+                        col-md-4
+                        custom-box-2
+                        inventory-box
+                        px-6
+                        py-8
+                        rounded-xl
+                        mr-7
+                        mb-7
+                      "
+                    >
+                      <span
+                        class="svg-icon svg-icon-3x svg-icon-light d-block my-2"
+                        ><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Shopping\Loader.svg--><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <rect x="0" y="0" width="24" height="24" />
+                            <path
+                              d="M8,4 C8.55228475,4 9,4.44771525 9,5 L9,17 L18,17 C18.5522847,17 19,17.4477153 19,18 C19,18.5522847 18.5522847,19 18,19 L9,19 C8.44771525,19 8,18.5522847 8,18 C7.44771525,18 7,17.5522847 7,17 L7,6 L5,6 C4.44771525,6 4,5.55228475 4,5 C4,4.44771525 4.44771525,4 5,4 L8,4 Z"
+                              fill="#000000"
+                              opacity="0.3"
+                            />
+                            <rect
+                              fill="#000000"
+                              opacity="0.3"
+                              x="11"
+                              y="7"
+                              width="8"
+                              height="8"
+                              rx="4"
+                            />
+                            <circle fill="#000000" cx="8" cy="18" r="3" />
+                          </g></svg
+                        ><!--end::Svg Icon--></span
+                      >
 
-                                                        <div class="col col-xxl-12  custom-box-2 inventory-box px-6 py-8 rounded-xl mr-7 mb-7">
-                                                            <span class="svg-icon svg-icon-3x svg-icon-light d-block my-2"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Shopping\Loader.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                    <rect x="0" y="0" width="24" height="24"/>
-                                                                    <path d="M8,4 C8.55228475,4 9,4.44771525 9,5 L9,17 L18,17 C18.5522847,17 19,17.4477153 19,18 C19,18.5522847 18.5522847,19 18,19 L9,19 C8.44771525,19 8,18.5522847 8,18 C7.44771525,18 7,17.5522847 7,17 L7,6 L5,6 C4.44771525,6 4,5.55228475 4,5 C4,4.44771525 4.44771525,4 5,4 L8,4 Z" fill="#000000" opacity="0.3"/>
-                                                                    <rect fill="#000000" opacity="0.3" x="11" y="7" width="8" height="8" rx="4"/>
-                                                                    <circle fill="#000000" cx="8" cy="18" r="3"/>
-                                                                </g>
-                                                            </svg><!--end::Svg Icon--></span>
+                      <a
+                        href="#"
+                        class="text-white font-weight-bold font-size-h6 mt-2"
+                        >Inventory</a
+                      >
+                      <h3 class="text-white display-4">10,700</h3>
+                    </div>
 
-															<a href="#" class="text-white font-weight-bold font-size-h6 mt-2">Inventory</a>
-															<h3 class="text-white display-4">10,700</h3>
-														</div>
+                    <div
+                      class="
+                        col
+                        custom-box-3
+                        sales-box
+                        px-6
+                        py-8
+                        rounded-xl
+                        mb-7
+                      "
+                    >
+                      <span
+                        class="svg-icon svg-icon-3x svg-icon-light d-block my-2"
+                        ><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Shopping\Sale2.svg--><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <rect x="0" y="0" width="24" height="24" />
+                            <polygon
+                              fill="#434343"
+                              opacity="0.3"
+                              points="12 20.0218549 8.47346039 21.7286168 6.86905972 18.1543453 3.07048824 17.1949849 4.13894342 13.4256452 1.84573388 10.2490577 5.08710286 8.04836581 5.3722735 4.14091196 9.2698837 4.53859595 12 1.72861679 14.7301163 4.53859595 18.6277265 4.14091196 18.9128971 8.04836581 22.1542661 10.2490577 19.8610566 13.4256452 20.9295118 17.1949849 17.1309403 18.1543453 15.5265396 21.7286168"
+                            />
+                            <polygon
+                              fill="#000000"
+                              points="14.0890818 8.60255815 8.36079737 14.7014391 9.70868621 16.049328 15.4369707 9.950447"
+                            />
+                            <path
+                              d="M10.8543431,9.1753866 C10.8543431,10.1252593 10.085524,10.8938719 9.13585777,10.8938719 C8.18793881,10.8938719 7.41737243,10.1252593 7.41737243,9.1753866 C7.41737243,8.22551387 8.18793881,7.45690126 9.13585777,7.45690126 C10.085524,7.45690126 10.8543431,8.22551387 10.8543431,9.1753866"
+                              fill="#000000"
+                              opacity="0.3"
+                            />
+                            <path
+                              d="M14.8641422,16.6221564 C13.9162233,16.6221564 13.1456569,15.8535438 13.1456569,14.9036711 C13.1456569,13.9520555 13.9162233,13.1851857 14.8641422,13.1851857 C15.8138085,13.1851857 16.5826276,13.9520555 16.5826276,14.9036711 C16.5826276,15.8535438 15.8138085,16.6221564 14.8641422,16.6221564 Z"
+                              fill="#000000"
+                              opacity="0.3"
+                            />
+                          </g></svg
+                        ><!--end::Svg Icon--></span
+                      >
+                      <a
+                        href="#"
+                        class="text-white font-weight-bold font-size-h6 mt-2"
+                        >Sales</a
+                      >
+                      <h3 class="text-white display-4">
+                        <span>&#8358;</span>10,108,000
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-                                                        <div class="col  custom-box-3 sales-box px-6 py-8 rounded-xl mb-7">
-                                                            <span class="svg-icon svg-icon-3x svg-icon-light d-block my-2"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Shopping\Sale2.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                    <rect x="0" y="0" width="24" height="24"/>
-                                                                    <polygon fill="#434343" opacity="0.3" points="12 20.0218549 8.47346039 21.7286168 6.86905972 18.1543453 3.07048824 17.1949849 4.13894342 13.4256452 1.84573388 10.2490577 5.08710286 8.04836581 5.3722735 4.14091196 9.2698837 4.53859595 12 1.72861679 14.7301163 4.53859595 18.6277265 4.14091196 18.9128971 8.04836581 22.1542661 10.2490577 19.8610566 13.4256452 20.9295118 17.1949849 17.1309403 18.1543453 15.5265396 21.7286168"/>
-                                                                    <polygon fill="#000000" points="14.0890818 8.60255815 8.36079737 14.7014391 9.70868621 16.049328 15.4369707 9.950447"/>
-                                                                    <path d="M10.8543431,9.1753866 C10.8543431,10.1252593 10.085524,10.8938719 9.13585777,10.8938719 C8.18793881,10.8938719 7.41737243,10.1252593 7.41737243,9.1753866 C7.41737243,8.22551387 8.18793881,7.45690126 9.13585777,7.45690126 C10.085524,7.45690126 10.8543431,8.22551387 10.8543431,9.1753866" fill="#000000" opacity="0.3"/>
-                                                                    <path d="M14.8641422,16.6221564 C13.9162233,16.6221564 13.1456569,15.8535438 13.1456569,14.9036711 C13.1456569,13.9520555 13.9162233,13.1851857 14.8641422,13.1851857 C15.8138085,13.1851857 16.5826276,13.9520555 16.5826276,14.9036711 C16.5826276,15.8535438 15.8138085,16.6221564 14.8641422,16.6221564 Z" fill="#000000" opacity="0.3"/>
-                                                                </g>
-                                                            </svg><!--end::Svg Icon--></span>
-															<a href="#" class="text-white font-weight-bold font-size-h6 mt-2">Sales</a>
-                                                            <h3 class="text-white display-4"><span>&#8358;</span>10,108,000</h3>
-														</div>
-                                                    </div>
-                                                </div>
-                                            </div>
+              <!--begin::second card role-->
+              <!--begin::Body-->
+              <div class="card-body p-0 position-relative overflow-hidden">
+                <!--begin::Chart-->
+                <div
+                  id="kt_mixed_widget_1_chart"
+                  class="card-rounded-bottom"
+                  style="height: 70px"
+                ></div>
+                <!--end::Chart-->
+                <!--begin::Stats-->
+                <div class="card-spacer mt-n25">
+                  <!--begin::Row-->
+                  <div class="row m-0">
+                    <div
+                      class="
+                        col-md-4
+                        custom-box-4
+                        profit-box
+                        px-6
+                        py-8
+                        rounded-xl
+                        mr-7
+                        mb-7
+                      "
+                    >
+                      <span
+                        class="svg-icon svg-icon-3x svg-icon-light d-block my-2"
+                      >
+                        <!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Shopping\Chart-bar2.svg--><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <rect x="0" y="0" width="24" height="24" />
+                            <rect
+                              fill="#000000"
+                              opacity="0.3"
+                              x="17"
+                              y="4"
+                              width="3"
+                              height="13"
+                              rx="1.5"
+                            />
+                            <rect
+                              fill="#000000"
+                              opacity="0.3"
+                              x="12"
+                              y="9"
+                              width="3"
+                              height="8"
+                              rx="1.5"
+                            />
+                            <path
+                              d="M5,19 L20,19 C20.5522847,19 21,19.4477153 21,20 C21,20.5522847 20.5522847,21 20,21 L4,21 C3.44771525,21 3,20.5522847 3,20 L3,4 C3,3.44771525 3.44771525,3 4,3 C4.55228475,3 5,3.44771525 5,4 L5,19 Z"
+                              fill="#000000"
+                              fill-rule="nonzero"
+                            />
+                            <rect
+                              fill="#000000"
+                              opacity="0.3"
+                              x="7"
+                              y="11"
+                              width="3"
+                              height="6"
+                              rx="1.5"
+                            />
+                          </g></svg
+                        ><!--end::Svg Icon-->
+                      </span>
+                      <a
+                        href="#"
+                        class="text-white font-weight-bold font-size-h6"
+                        >Profit</a
+                      >
+                      <h3 class="text-white display-4">
+                        <span>&#8358;</span>120,000,000
+                      </h3>
+                    </div>
 
+                    <div
+                      class="
+                        col-md-4
+                        custom-box-5
+                        audit-box
+                        px-6
+                        py-8
+                        rounded-xl
+                        mr-7
+                        mb-7
+                      "
+                    >
+                      <span
+                        class="svg-icon svg-icon-3x svg-icon-light d-block my-2"
+                        ><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Shopping\Chart-pie.svg--><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <rect x="0" y="0" width="24" height="24" />
+                            <path
+                              d="M4.00246329,12.2004927 L13,14 L13,4.06189375 C16.9463116,4.55399184 20,7.92038235 20,12 C20,16.418278 16.418278,20 12,20 C7.64874861,20 4.10886412,16.5261253 4.00246329,12.2004927 Z"
+                              fill="#000000"
+                              opacity="0.3"
+                            />
+                            <path
+                              d="M3.0603968,10.0120794 C3.54712466,6.05992157 6.91622084,3 11,3 L11,11.6 L3.0603968,10.0120794 Z"
+                              fill="#000000"
+                            />
+                          </g></svg
+                        ><!--end::Svg Icon--></span
+                      >
 
+                      <a
+                        href="#"
+                        class="text-white font-weight-bold font-size-h6 mt-2"
+                        >Audit Report</a
+                      >
+                    </div>
 
+                    <div
+                      class="
+                        col
+                        custom-box-6
+                        staff-box
+                        px-6
+                        py-8
+                        rounded-xl
+                        mb-7
+                      "
+                    >
+                      <span
+                        class="svg-icon svg-icon-3x svg-icon-light d-block my-2"
+                        ><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\General\User.svg--><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <polygon points="0 0 24 0 24 24 0 24" />
+                            <path
+                              d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z"
+                              fill="#000000"
+                              fill-rule="nonzero"
+                              opacity="0.3"
+                            />
+                            <path
+                              d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z"
+                              fill="#000000"
+                              fill-rule="nonzero"
+                            />
+                          </g></svg
+                        ><!--end::Svg Icon--></span
+                      >
+                      <a
+                        href="#"
+                        class="text-white font-weight-bold font-size-h6 mt-2"
+                        >Staff management</a
+                      >
+                      <h3 class="text-white display-4">5</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <!-- MAJOR DIV CLOSURE ENDS HERE -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-											<!--begin::second card role-->
-												<!--begin::Body-->
-												<div class="card-body p-0 position-relative overflow-hidden">
-													<!--begin::Chart-->
-													<div id="kt_mixed_widget_1_chart" class="card-rounded-bottom" style="height: 70px"></div>
-													<!--end::Chart-->
-													<!--begin::Stats-->
-													<div class="card-spacer mt-n25">
-														<!--begin::Row-->
-														<div class="row m-0">
-															<div class="col custom-box-4 profit-box  px-6 py-8 rounded-xl mr-7 mb-7">
-																<span class="svg-icon svg-icon-3x svg-icon-light d-block my-2">
-																	<!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Shopping\Chart-bar2.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																		<rect x="0" y="0" width="24" height="24"/>
-																		<rect fill="#000000" opacity="0.3" x="17" y="4" width="3" height="13" rx="1.5"/>
-																		<rect fill="#000000" opacity="0.3" x="12" y="9" width="3" height="8" rx="1.5"/>
-																		<path d="M5,19 L20,19 C20.5522847,19 21,19.4477153 21,20 C21,20.5522847 20.5522847,21 20,21 L4,21 C3.44771525,21 3,20.5522847 3,20 L3,4 C3,3.44771525 3.44771525,3 4,3 C4.55228475,3 5,3.44771525 5,4 L5,19 Z" fill="#000000" fill-rule="nonzero"/>
-																		<rect fill="#000000" opacity="0.3" x="7" y="11" width="3" height="6" rx="1.5"/>
-																	</g>
-																</svg><!--end::Svg Icon-->
-																</span>
-																<a href="#" class="text-white font-weight-bold font-size-h6">Profit</a>
-																<h3 class="text-white display-4"><span>&#8358;</span>120,000,000</h3>
-															</div>
-	
-															<div class="col custom-box-5 audit-box px-6 py-8 rounded-xl mr-7 mb-7">
-																<span class="svg-icon svg-icon-3x svg-icon-light d-block my-2"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Shopping\Chart-pie.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																		<rect x="0" y="0" width="24" height="24"/>
-																		<path d="M4.00246329,12.2004927 L13,14 L13,4.06189375 C16.9463116,4.55399184 20,7.92038235 20,12 C20,16.418278 16.418278,20 12,20 C7.64874861,20 4.10886412,16.5261253 4.00246329,12.2004927 Z" fill="#000000" opacity="0.3"/>
-																		<path d="M3.0603968,10.0120794 C3.54712466,6.05992157 6.91622084,3 11,3 L11,11.6 L3.0603968,10.0120794 Z" fill="#000000"/>
-																	</g>
-																</svg><!--end::Svg Icon--></span>
-	
-																<a href="#" class="text-white font-weight-bold font-size-h6 mt-2">Audit Report</a>
-															</div>
-	
-															<div class="col custom-box-6 staff-box px-6 py-8 rounded-xl mb-7">
-																<span class="svg-icon svg-icon-3x svg-icon-light d-block my-2"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\General\User.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																		<polygon points="0 0 24 0 24 24 0 24"/>
-																		<path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
-																		<path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z" fill="#000000" fill-rule="nonzero"/>
-																	</g>
-																</svg><!--end::Svg Icon--></span>
-																<a href="#" class="text-white font-weight-bold font-size-h6 mt-2">Staff management</a>
-																<h3 class="text-white display-4">5</h3>
-															</div>
-														</div>
-													</div>
-												</div>
+    <footer class="text-center">
+      <p>All Copyrights Reserved 2021. A product of cafetimedevs.</p>
+    </footer>
 
-											<!-- MAJOR DIV CLOSURE ENDS HERE -->
-                                        </div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-						<footer class="text-center">
-							<p>All Copyrights Reserved 2021. A product of cafetimedevs.</p>
-						</footer>
-
-                               
-
-                                            <script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
-                                            <!--begin::Global Config(global config for global JS scripts)-->
-                                            <script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1400 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#3699FF", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#E4E6EF", "dark": "#181C32" }, "light": { "white": "#ffffff", "primary": "#E1F0FF", "secondary": "#EBEDF3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#3F4254", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#EBEDF3", "gray-300": "#E4E6EF", "gray-400": "#D1D3E0", "gray-500": "#B5B5C3", "gray-600": "#7E8299", "gray-700": "#5E6278", "gray-800": "#3F4254", "gray-900": "#181C32" } }, "font-family": "Poppins" };</script>
-                                            <!--end::Global Config-->
-                                            <!--begin::Global Theme Bundle(used by all pages)-->
-                                            <script src="assets/plugins/global/plugins.bundle.js"></script>
-                                            <script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
-                                            <script src="assets/js/scripts.bundle.js"></script>
-											<script src="assets/js/app.js"></script>
-                                            <!--end::Global Theme Bundle-->
-                                            <!--begin::Page Scripts(used by this page)-->
-                                            <script src="assets/js/pages/custom/login/login-general.js"></script>
-                                            <!--end::Page Scripts-->
-</body>
+    <script>
+      var HOST_URL =
+        "https://preview.keenthemes.com/metronic/theme/html/tools/preview";
+    </script>
+    <!--begin::Global Config(global config for global JS scripts)-->
+    <script>
+      var KTAppSettings = {
+        breakpoints: { sm: 576, md: 768, lg: 992, xl: 1200, xxl: 1400 },
+        colors: {
+          theme: {
+            base: {
+              white: "#ffffff",
+              primary: "#3699FF",
+              secondary: "#E5EAEE",
+              success: "#1BC5BD",
+              info: "#8950FC",
+              warning: "#FFA800",
+              danger: "#F64E60",
+              light: "#E4E6EF",
+              dark: "#181C32",
+            },
+            light: {
+              white: "#ffffff",
+              primary: "#E1F0FF",
+              secondary: "#EBEDF3",
+              success: "#C9F7F5",
+              info: "#EEE5FF",
+              warning: "#FFF4DE",
+              danger: "#FFE2E5",
+              light: "#F3F6F9",
+              dark: "#D6D6E0",
+            },
+            inverse: {
+              white: "#ffffff",
+              primary: "#ffffff",
+              secondary: "#3F4254",
+              success: "#ffffff",
+              info: "#ffffff",
+              warning: "#ffffff",
+              danger: "#ffffff",
+              light: "#464E5F",
+              dark: "#ffffff",
+            },
+          },
+          gray: {
+            "gray-100": "#F3F6F9",
+            "gray-200": "#EBEDF3",
+            "gray-300": "#E4E6EF",
+            "gray-400": "#D1D3E0",
+            "gray-500": "#B5B5C3",
+            "gray-600": "#7E8299",
+            "gray-700": "#5E6278",
+            "gray-800": "#3F4254",
+            "gray-900": "#181C32",
+          },
+        },
+        "font-family": "Poppins",
+      };
+    </script>
+    <!--end::Global Config-->
+    <!--begin::Global Theme Bundle(used by all pages)-->
+    <script src="assets/plugins/global/plugins.bundle.js"></script>
+    <script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
+    <script src="assets/js/scripts.bundle.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!--end::Global Theme Bundle-->
+    <!--begin::Page Scripts(used by this page)-->
+    <script src="assets/js/pages/custom/login/login-general.js"></script>
+    <!--end::Page Scripts-->
+  </body>
 </html>
-
-
-
-
-
-
-
-
